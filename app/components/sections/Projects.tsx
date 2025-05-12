@@ -53,7 +53,7 @@ const projects: Project[] = [
    {
     id: 3, 
     title: "Evision",
-    description: "Another example project. Description can include: 1) Problems solved 2) Technical solutions used 3) Results achieved 4) What you learned",
+    description: "Evision is an online platform designed to help students explore opportunities to study abroad by checking their eligibility to apply. As the project manager and part of the design team, I played a key role in creating a user-friendly experience that simplifies the process for students, making their journey toward international education smoother and more accessible.",
     period: "2024.10 - 2025.01",
     image: "/projects/evision.png",
     skills: ["Project Managment", "Tailwind", "Laravel"], // Tech stack
