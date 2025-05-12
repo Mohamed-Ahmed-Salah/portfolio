@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: "SaladBar Meals",
     description: "Built a food subscription app with secure Moyasar payments, QR code scanning for vending machine meal collection, and customizable meal plans. Used Clean Architecture (BLoC, Freezed) with Firebase for notifications and crash reporting.",
     period: "2024.04 - 2025.02",
-    image: "/projects/saladbar.png", // Screenshot path
+    image: "/portfolio/projects/saladbar.png", // Screenshot path
     skills: ["Flutter", "Bloc", "Firebase"], // Tech stack
     link: "https://saladbar.sa"
   },
@@ -46,7 +46,7 @@ const projects: Project[] = [
     title: "Fushati",
     description: "An application that enables parents to monitor and control their children's canteen spending by recharging their wallets/cards, setting daily limits, blocking certain snacks and food items, and also viewing purchase history.",
     period: "2024.6 - 2025.02",
-    image: "/projects/fushati.png",
+    image: "/portfolio/projects/fushati.png",
     skills: ["Flutter", "Bloc", "Firebase"], // Tech stack
     link: "https://fushati.com/"
   },
@@ -55,7 +55,7 @@ const projects: Project[] = [
     title: "Evision",
     description: "Evision is an online platform designed to help students explore opportunities to study abroad by checking their eligibility to apply. As the project manager and part of the design team, I played a key role in creating a user-friendly experience that simplifies the process for students, making their journey toward international education smoother and more accessible.",
     period: "2024.10 - 2025.01",
-    image: "/projects/evision.png",
+    image: "/portfolio/projects/evision.png",
     skills: ["Project Managment", "Tailwind", "Laravel"], // Tech stack
     link: "https://evision-edu.com"
   }

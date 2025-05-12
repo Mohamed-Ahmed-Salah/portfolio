@@ -42,7 +42,7 @@ const publications: Publication[] = [
     description: "English description (by E3M)",
     overview: "This is a detailed overview of the paper...",
     publishDate: "December 2023",
-    chartImage: "/research/1.png"
+    chartImage: "/portfolio/research/1.png"
   },
   {
     // Published paper with citations example

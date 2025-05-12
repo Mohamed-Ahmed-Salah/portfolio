@@ -378,7 +378,7 @@ export default function ExperienceModal({
                           group-hover:-translate-y-1
                         ">
                           <Image
-                            src={`/skills/${item.toLowerCase().replace(/[\s()\.+]/g, '')}.svg`}
+                            src={`/portfolio/skills/${item.toLowerCase().replace(/[\s()\.+]/g, '')}.svg`}
                             alt={item}
                             width={32}
                             height={32}

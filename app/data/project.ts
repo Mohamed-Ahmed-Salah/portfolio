@@ -30,13 +30,13 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     title: "SaladBar Meals",
     company: "Theqah", 
     overview: "Project 1 Overview",
-    mainImage: "/projects/saladbar.png",
+    mainImage: "/portfolio/projects/saladbar.png",
     link: "https://saladbar.sa",
     features: [
       {
         title: "Feature 1",
         description: "Feature 1 Description",
-        image: "/example1/feature1.png"
+        image: "/portfolio/example1/feature1.png"
       }
     ],
     techStack: [
@@ -62,13 +62,13 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     title: "Fushati",
     company: "Theqah", 
     overview: "Project 2 Overview",
-    mainImage: "/projects/saladbar.png",
+    mainImage: "/portfolio/projects/saladbar.png",
     link: "https://fushati.com",
     features: [
       {
         title: "Feature 1",
         description: "Feature 1 Description",
-        image: "/example1/feature1.png"
+        image: "/portfolio/example1/feature1.png"
       }
     ],
     techStack: [
@@ -94,13 +94,13 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
     title: "Evsion",
     company: "Evision - Freelance",
     overview: "Project 2 Overview", 
-    mainImage: "/projects/evision.png",
+    mainImage: "/portfolio/projects/evision.png",
     link: "https://evision-edu.com",
     features: [
       {
         title: "Feature 1",
         description: "Feature 1 Description",
-        image: "/example2/feature1.png"
+        image: "/portfolio/example2/feature1.png"
       }
     ],
     techStack: [

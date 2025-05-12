@@ -30,7 +30,7 @@ const experiences: Experience[] = [
     title: "Flutter Developer",
     company: "Theqah",
     period: "April 2024 - Present",
-    logo: "/images/theqah.jpeg", 
+    logo: "/portfolio/images/theqah.jpeg", 
     skills: ["Flutter", "Bloc", "Restful APIs","Flutter Flavors", "Firebase Crashlytics","Domain-Driven Design (DDD)"], // Skills list
     description: "Developed and maintained two Flutter applications with over 500 active users, implementing Clean Architecture, secure payment integration and improving apps performance"
   },
@@ -39,7 +39,7 @@ const experiences: Experience[] = [
     title: "Full Stack Software Engineer",
     company: "MAXNET Digital Services",
     period: "October 2022 - April 2023",
-    logo: "/images/mds.jpeg",
+    logo: "/portfolio/images/mds.jpeg",
     skills: ["Flutter", "Java Spring boot", "Spring Security","JWT", "Swagger UI", "API Documentation","MVC"],
     description: "Integrated the Electronic Banking System (EBS) Consumer API for payment processing, card operations, and service payments such as university tuition, internet bills, and other utilities."
   }

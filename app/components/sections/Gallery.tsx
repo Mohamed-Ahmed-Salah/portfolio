@@ -29,7 +29,7 @@ type Photo = {
 const photos: Photo[] = [
   {
     id: 1,
-    image: "/gallery/example.jpg",
+    image: "/portfolio/gallery/example.jpg",
     date: "2023.12",
     location: "Santa Cruz Beach Boardwalk",
     description: "With UCSC friends"

@@ -14,30 +14,30 @@ import AnimatedText from "../common/AnimatedText"
 const technologies = {
   // Development Stack 
   stack: [
-    { name: 'Flutter', icon: '/skills/flutter.svg' },
-    { name: 'Java Spring boot', icon: '/skills/spring.png' },     
-    { name: 'SQL', icon: '/skills/mysql.svg' },
+    { name: 'Flutter', icon: '/portfolio/skills/flutter.svg' },
+    { name: 'Java Spring boot', icon: '/portfolio/skills/spring.png' },     
+    { name: 'SQL', icon: '/portfolio/skills/mysql.svg' },
   ],
   
   // state Management skills examples
   state: [
-    { name: 'Bloc', icon: '/skills/bloc.png' },
-    { name: 'Provider', icon: '/skills/provider.png' }, // Add your familiar backend languages
-    { name: 'GetX', icon: '/skills/getx.png' },
+    { name: 'Bloc', icon: '/portfolio/skills/bloc.png' },
+    { name: 'Provider', icon: '/portfolio/skills/provider.png' }, // Add your familiar backend languages
+    { name: 'GetX', icon: '/portfolio/skills/getx.png' },
   ],
 
   // Database and local storage examples
   databasesAndStorage: [
-    { name: 'SQLite', icon: '/skills/sqlite.svg' },  // Add databases you've used
-    { name: 'Hive', icon: '/skills/hive.png' },
-    { name: 'Shared Preferences ', icon: '/skills/shared_pref.svg' }, // Add deployment tools you're familiar with
+    { name: 'SQLite', icon: '/portfolio/skills/sqlite.svg' },  // Add databases you've used
+    { name: 'Hive', icon: '/portfolio/skills/hive.png' },
+    { name: 'Shared Preferences ', icon: '/portfolio/skills/shared_pref.svg' }, // Add deployment tools you're familiar with
   ],
 
   // Development tools examples
   tools: [
-    { name: 'Git', icon: '/skills/git.svg' },
-    { name: 'VS Code', icon: '/skills/vscode.png' },
-    { name: 'Postman', icon: '/skills/postman.svg' },
+    { name: 'Git', icon: '/portfolio/skills/git.svg' },
+    { name: 'VS Code', icon: '/portfolio/skills/vscode.png' },
+    { name: 'Postman', icon: '/portfolio/skills/postman.svg' },
   ]
 }
 

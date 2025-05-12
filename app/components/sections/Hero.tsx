@@ -12,7 +12,7 @@ export default function Hero() {
         <AnimatedText className="flex flex-col items-center sm:items-start gap-4">
           <Image
             className="rounded-full"
-            src="/images/me.jpg" 
+            src="/portfolio/images/me.jpg" 
             alt="Profile Picture"
             width={120}
             height={120}
@@ -52,7 +52,7 @@ export default function Hero() {
           >
             <Image
               className="invert dark:invert-0 mr-2"
-              src="/github.svg"
+              src="/portfolio/github.svg"
               alt="GitHub"
               width={20}
               height={20}
@@ -76,7 +76,7 @@ export default function Hero() {
           >
             <Image
               className="dark:invert mr-2"
-              src="/resume.svg"
+              src="/portfolio/resume.svg"
               alt="Resume"
               width={20}
               height={20}
@@ -97,7 +97,7 @@ export default function Hero() {
           <Image
             aria-hidden
             className="dark:invert"
-            src="/mail.svg"
+            src="/portfolio/mail.svg"
             alt="Email"
             width={16}
             height={16}
@@ -113,7 +113,7 @@ export default function Hero() {
           <Image
             aria-hidden
             className="dark:invert"
-            src="/linkedin.svg"
+            src="/portfolio/linkedin.svg"
             alt="LinkedIn"
             width={16}
             height={16}
