@@ -12,7 +12,7 @@ export default function Hero() {
         <AnimatedText className="flex flex-col items-center sm:items-start gap-4">
           <Image
             className="rounded-full"
-            src="/portfolio/images/me.jpg" 
+            src="/portfolio/images/me.JPG" 
             alt="Profile Picture"
             width={120}
             height={120}
