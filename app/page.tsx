@@ -2,6 +2,7 @@
 
 // Step 1: Import necessary components
 // You can find all component files in the /components directory
+import { useEffect } from 'react'
 import Hero from "./components/sections/Hero"
 import About from "./components/sections/About"
 import CourseTimeline from "./components/education/CourseTimeline" 
@@ -11,6 +12,7 @@ import Experience from './components/sections/Experience'
 import { Box } from '@mui/material'
 import Projects from './components/sections/Projects'
 import Gallery from './components/sections/Gallery'
+import { initOneko } from './oneko'  
 
 // Step 2: Choose your template version
 // For Researcher Template: uncomment these imports
@@ -21,6 +23,10 @@ import Gallery from './components/sections/Gallery'
 // You can add/remove/reorder sections by modifying the components below
 // Make sure section IDs match with navigation items in /components/common/Navbar.tsx
 export default function Home() {
+  // Initialize oneko when page loads
+useEffect(() => {
+       initOneko()
+     }, [])
   return (
     <>
       {/* Navigation bar - Edit items in /components/common/Navbar.tsx */}

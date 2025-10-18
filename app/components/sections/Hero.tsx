@@ -92,7 +92,7 @@ export default function Hero() {
       >
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="mailto:mohameda249@hotmail.com" // Replace with your email address
+          href="mailto:&#x6d;&#x6f;&#x68;&#x61;&#x6d;&#x65;&#x64;&#x61;&#x32;&#x34;&#x39;&#x40;&#x68;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" // Replace with your email address
         >
           <Image
             aria-hidden

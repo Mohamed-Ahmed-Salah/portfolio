@@ -28,14 +28,23 @@ const experiences: Experience[] = [
   {
     id: 1,
     title: "Flutter Developer",
+    company: "Marcom Arabia",
+    period: "August 2025 - Present",
+    logo: "/portfolio/images/marcomArabia.svg", 
+    skills: ["Flutter", "Firebase", "Firebase Crashlytics","Firebase Remote Config","AI Chat Bot", "Google Maps"], // Skills list
+    description: "Built a Flutter attendance tracking CRM with GPS location tracking and Implemented Firebase Remote Config to dynamically customize themes and branding based on the client company. Created an AI-powered chatbot assistant that helps users understand company policies, check attendance records, analyzes attendance history, generates reports, and assists with leave planning."
+  },
+  {
+    id: 2,
+    title: "Flutter Developer",
     company: "Theqah",
-    period: "April 2024 - Present",
+    period: "April 2024 - January 2025",
     logo: "/portfolio/images/theqah.jpeg", 
     skills: ["Flutter", "Bloc", "Restful APIs","Flutter Flavors", "Firebase Crashlytics","Domain-Driven Design (DDD)"], // Skills list
     description: "Developed and maintained two Flutter applications with over 500 active users, implementing Clean Architecture, secure payment integration and improving apps performance"
   },
   {
-    id: 2, 
+    id: 3, 
     title: "Full Stack Software Engineer",
     company: "MAXNET Digital Services",
     period: "October 2022 - April 2023",
@@ -43,6 +52,8 @@ const experiences: Experience[] = [
     skills: ["Flutter", "Java Spring boot", "Spring Security","JWT", "Swagger UI", "API Documentation","MVC"],
     description: "Integrated the Electronic Banking System (EBS) Consumer API for payment processing, card operations, and service payments such as university tuition, internet bills, and other utilities."
   }
+
+   
 ];
 
 export default function Experience() {
