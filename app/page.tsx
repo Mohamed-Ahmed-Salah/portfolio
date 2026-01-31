@@ -8,6 +8,7 @@ import About from "./components/sections/About"
 import CourseTimeline from "./components/education/CourseTimeline" 
 import Navbar from "./components/common/Navbar"
 import MySkills from './components/sections/MySkills'
+import DevelopmentMethodology from './components/sections/DevelopmentMethodology'
 import Experience from './components/sections/Experience'
 import { Box } from '@mui/material'
 import Projects from './components/sections/Projects'
@@ -50,7 +51,10 @@ useEffect(() => {
         
         {/* Skills section - Add your skills in /components/sections/MySkills */}
         <MySkills />
-        
+
+        {/* Development Methodology section - Your planning process and work style */}
+        <DevelopmentMethodology />
+
         {/* Education section - Edit timeline in /components/education/CourseTimeline */}
         <section id="education" className="relative">
           <Box sx={{ 
