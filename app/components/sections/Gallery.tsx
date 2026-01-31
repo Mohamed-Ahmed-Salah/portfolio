@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import "../../exp.css";
 
 import AnimatedText from '../common/AnimatedText'
@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Typography, Container, Box, Card, CardContent, Grid } from '@mui/material'
 import GradientBackground from '../common/GradientBackground'
 import ExperienceCard from "../common/ExperianceCard";
+import Script from 'next/script';
 
 import { X } from 'lucide-react';
 
@@ -46,7 +47,28 @@ const photos: Photo[] = [
 export default function Gallery() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState<string>('');
+  const [loadScripts, setLoadScripts] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  // Load Webflow scripts only when Gallery section is near viewport
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setLoadScripts(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px' } // Start loading 200px before section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const openVideo = (videoSrc: string) => {
     setSelectedVideo(videoSrc);
@@ -67,7 +89,16 @@ export default function Gallery() {
   };
 
   return (
-    <Container id="gallery" maxWidth="xl" component="section">
+    <div ref={sectionRef}>
+      {/* Load Webflow scripts only when Gallery is near viewport */}
+      {/* hover2.js contains jQuery, so jquery.js removed (was duplicate) */}
+      {loadScripts && (
+        <>
+          <Script src="/portfolio/scripts/hover2.js" />
+          <Script src="/portfolio/scripts/hover.js" />
+        </>
+      )}
+      <Container id="gallery" maxWidth="xl" component="section">
       <Box sx={{ 
         minHeight: '100vh',
         display: 'flex', 
@@ -186,6 +217,7 @@ export default function Gallery() {
         )}
       </Box>
     </Container>
+    </div>
   )
 }
 

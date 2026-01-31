@@ -14,12 +14,10 @@ export default function About() {
           <AnimatedText>
             <div className="space-y-4">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                I'm a Software Engineer from Sudan. I graduated with honors in BSc Software Engineering from Eastern Mediterranean University in 2021.
+                Outside of daily development work, I spend time learning about software design and system architecture and how systems scale over time
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
-              I love building Mobile Applications with Flutter, focusing on creating scalable, high-performing applications tailored to both user needs and business objectives.
-              I follow clean architecture and state management best practices to ensure maintainable, scalable and testable code.
-              I also work with Java Spring Boot to build robust backend restful services that integrate seamlessly with mobile and web frontends.
+                I also practice offensive cybersecurity. Hack The Box, PortSwigger, TryHackMe. Understanding how common vulnerabilities and attacks work makes me design software with security in mind from the start.
               </p>
             </div>
           </AnimatedText>

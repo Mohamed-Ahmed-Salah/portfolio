@@ -13,8 +13,7 @@ import Experience from './components/sections/Experience'
 import { Box } from '@mui/material'
 import Projects from './components/sections/Projects'
 import Gallery from './components/sections/Gallery'
-import { initOneko } from './oneko'  
-import Script from 'next/script';
+import { initOneko } from './oneko'
 
 // Step 2: Choose your template version
 // For Researcher Template: uncomment these imports
@@ -31,15 +30,6 @@ useEffect(() => {
      }, [])
   return (
     <>
-    <Script 
-        src="/portfolio/scripts/jquery.js" 
-      />
-      <Script 
-        src="/portfolio/scripts/hover.js" 
-      />
-      <Script 
-        src="/portfolio/scripts/hover2.js" 
-      />
       {/* Navigation bar - Edit items in /components/common/Navbar.tsx */}
       <Navbar />
       <main>

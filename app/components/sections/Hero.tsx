@@ -28,7 +28,7 @@ export default function Hero() {
           className="max-w-2xl text-center sm:text-left"
         >
           <p className="text-foreground/80 leading-relaxed">
-           Hi stranger! I'm Mohamed, a Flutter developer dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.
+           Flutter Developer with 7+ released mobile applications and over 3 years of experience, with cybersecurity and Java Spring boot backend development background, skilled in building scalable, maintainable and testable secure mobile apps using Clean Architecture, state management best practices, and payment integrations.
           </p>
         </AnimatedText>
 

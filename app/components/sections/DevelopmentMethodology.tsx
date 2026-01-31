@@ -29,27 +29,7 @@ const phases = [
       iconBg: 'bg-sky-50'
     }
   },
-  {
-    id: 3,
-    title: 'Data & Logic Design',
-    shortTitle: 'DATA ARCHITECTURE',
-    description: 'Design data models, business logic, and Clean Architecture structure before implementation.',
-    tags: ['Domain Layer', 'Repository Interfaces', 'Use Cases', 'Data Flow'],
-    icon: (
-      <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.4109 0C4.57319 0 0 2.66779 0 6.07301V16.4839C0 19.8891 4.57319 22.5569 10.4109 22.5569C16.2486 22.5569 20.8218 19.8891 20.8218 16.4839V6.07301C20.8218 2.66779 16.2486 0 10.4109 0ZM19.0866 11.2785C19.0866 12.3217 18.232 13.3856 16.7431 14.1978C15.0665 15.112 12.8173 15.6163 10.4109 15.6163C8.00445 15.6163 5.75526 15.112 4.07868 14.1978C2.58971 13.3856 1.73515 12.3217 1.73515 11.2785V9.4739C3.58525 11.1006 6.74863 12.146 10.4109 12.146C14.0731 12.146 17.2365 11.0963 19.0866 9.4739V11.2785ZM4.07868 3.15363C5.75526 2.23942 8.00445 1.73515 10.4109 1.73515C12.8173 1.73515 15.0665 2.23942 16.7431 3.15363C18.232 3.96589 19.0866 5.02976 19.0866 6.07301C19.0866 7.11627 18.232 8.18013 16.7431 8.99239C15.0665 9.9066 12.8173 10.4109 10.4109 10.4109C8.00445 10.4109 5.75526 9.9066 4.07868 8.99239C2.58971 8.18013 1.73515 7.11627 1.73515 6.07301C1.73515 5.02976 2.58971 3.96589 4.07868 3.15363ZM16.7431 19.4033C15.0665 20.3175 12.8173 20.8218 10.4109 20.8218C8.00445 20.8218 5.75526 20.3175 4.07868 19.4033C2.58971 18.591 1.73515 17.5271 1.73515 16.4839V14.6793C3.58525 16.306 6.74863 17.3515 10.4109 17.3515C14.0731 17.3515 17.2365 16.3017 19.0866 14.6793V16.4839C19.0866 17.5271 18.232 18.591 16.7431 19.4033Z" fill="currentColor"/>
-      </svg>
-    ),
-    colors: {
-      fill: '#E8DFF0',
-      stroke: '#CBB8DF',
-      primary: '#8659B4',
-      tagBg: 'bg-purple-100',
-      tagBorder: 'border-purple-400',
-      tagText: 'text-purple-800',
-      iconBg: 'bg-purple-50'
-    }
-  },
+  
   {
     id: 2,
     title: 'UI/UX Research',
@@ -69,6 +49,27 @@ const phases = [
       tagBorder: 'border-orange-400',
       tagText: 'text-orange-900',
       iconBg: 'bg-orange-50'
+    }
+  },
+  {
+    id: 3,
+    title: 'Data & Logic Design',
+    shortTitle: 'DATA ARCHITECTURE',
+    description: 'Design data models, business logic, and Clean Architecture structure before implementation.',
+    tags: ['Domain Layer', 'Repository Interfaces', 'Use Cases', 'Data Flow'],
+    icon: (
+      <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.4109 0C4.57319 0 0 2.66779 0 6.07301V16.4839C0 19.8891 4.57319 22.5569 10.4109 22.5569C16.2486 22.5569 20.8218 19.8891 20.8218 16.4839V6.07301C20.8218 2.66779 16.2486 0 10.4109 0ZM19.0866 11.2785C19.0866 12.3217 18.232 13.3856 16.7431 14.1978C15.0665 15.112 12.8173 15.6163 10.4109 15.6163C8.00445 15.6163 5.75526 15.112 4.07868 14.1978C2.58971 13.3856 1.73515 12.3217 1.73515 11.2785V9.4739C3.58525 11.1006 6.74863 12.146 10.4109 12.146C14.0731 12.146 17.2365 11.0963 19.0866 9.4739V11.2785ZM4.07868 3.15363C5.75526 2.23942 8.00445 1.73515 10.4109 1.73515C12.8173 1.73515 15.0665 2.23942 16.7431 3.15363C18.232 3.96589 19.0866 5.02976 19.0866 6.07301C19.0866 7.11627 18.232 8.18013 16.7431 8.99239C15.0665 9.9066 12.8173 10.4109 10.4109 10.4109C8.00445 10.4109 5.75526 9.9066 4.07868 8.99239C2.58971 8.18013 1.73515 7.11627 1.73515 6.07301C1.73515 5.02976 2.58971 3.96589 4.07868 3.15363ZM16.7431 19.4033C15.0665 20.3175 12.8173 20.8218 10.4109 20.8218C8.00445 20.8218 5.75526 20.3175 4.07868 19.4033C2.58971 18.591 1.73515 17.5271 1.73515 16.4839V14.6793C3.58525 16.306 6.74863 17.3515 10.4109 17.3515C14.0731 17.3515 17.2365 16.3017 19.0866 14.6793V16.4839C19.0866 17.5271 18.232 18.591 16.7431 19.4033Z" fill="currentColor"/>
+      </svg>
+    ),
+    colors: {
+      fill: '#E8DFF0',
+      stroke: '#CBB8DF',
+      primary: '#8659B4',
+      tagBg: 'bg-purple-100',
+      tagBorder: 'border-purple-400',
+      tagText: 'text-purple-800',
+      iconBg: 'bg-purple-50'
     }
   },
   {
@@ -653,33 +654,6 @@ export default function DevelopmentMethodology() {
             ))}
           </div>
         </div>
-
-        {/* Bottom cycle indicator */}
-        <AnimatedText>
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full">
-              <span className="text-gray-500 dark:text-gray-400 text-sm font-medium">The cycle continues:</span>
-              <div className="flex items-center gap-1">
-                {phases.map((phase, idx) => (
-                  <div key={phase.id} className="flex items-center">
-                    <div
-                      className="w-2 h-2 rounded-full"
-                      style={{ backgroundColor: phase.colors.primary }}
-                    />
-                    {idx < phases.length - 1 && (
-                      <svg className="w-3 h-3 text-gray-400" viewBox="0 0 24 24" fill="none">
-                        <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                      </svg>
-                    )}
-                  </div>
-                ))}
-                <svg className="w-4 h-4 text-gray-400 ml-1" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </AnimatedText>
       </div>
     </section>
   )
