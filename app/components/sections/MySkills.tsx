@@ -116,7 +116,7 @@ export default function MySkills() {
                           width={48}
                           height={48}
                           className="
-                            dark:invert          
+                              
                             sm:w-[56px] sm:h-[56px] /* icon size 56px on sm(640px) and above */
                           "
                         />
