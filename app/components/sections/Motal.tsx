@@ -359,47 +359,48 @@ export default function ExperienceModal({
                     grid grid-cols-3 sm:grid-cols-4 
                     gap-6
                   ">
-                    {tech.items.map((item) => (
+                    {tech.items.map((item) => {
+                      const iconName = item.icon ?? item.label.toLowerCase().replace(/[\s()\.+]/g, '')
+                      const shouldInvert = item.invert ?? false
+                      return (
                       <div
-                        key={item}
+                        key={item.label}
                         className="
-                          flex flex-col items-center 
+                          flex flex-col items-center
                           gap-3
                           group
                         "
                       >
                         <div className="
-                          relative 
+                          relative
                           w-12 sm:w-14
                           h-12 sm:h-14
-                          flex items-center justify-center 
-                          transition-all duration-300 
-                          group-hover:scale-110   
+                          flex items-center justify-center
+                          transition-all duration-300
+                          group-hover:scale-110
                           group-hover:-translate-y-1
                         ">
                           <Image
-                            src={`/portfolio/skills/${item.toLowerCase().replace(/[\s()\.+]/g, '')}.svg`}
-                            alt={item}
+                            src={`/portfolio/skills/${iconName}.svg`}
+                            alt={item.label}
                             width={32}
                             height={32}
-                            className="
-                              dark:invert          
-                              sm:w-[40px] sm:h-[40px]
-                            "
+                            className={`sm:w-[40px] sm:h-[40px] ${shouldInvert ? 'dark:invert' : ''}`}
                           />
                         </div>
                         <span className="
                           text-xs sm:text-sm
-                          font-medium 
+                          font-medium
                           text-gray-600 dark:text-gray-400
                           group-hover:text-gray-900 dark:group-hover:text-gray-200
-                          transition-colors 
+                          transition-colors
                           text-center
                         ">
-                          {item}
+                          {item.label}
                         </span>
                       </div>
-                    ))}
+                      )
+                    })}
                   </div>
                 </div>
               ))}

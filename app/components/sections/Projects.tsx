@@ -32,8 +32,27 @@ type Project = {
 // 3. Sort projects in reverse chronological order
 // 4. Project descriptions should highlight core features and technical highlights
 const projects: Project[] = [
-  {
+   {
     id: 1,
+    title: "Marcom Attend",
+    description: "Flutter mobile app that helps companies manage employee attendance easily. The app allows employees to check in, check out, and track their working hours directly from their phones. It also includes geofence location-based verification, leave management, and reporting tools to help managers monitor attendance and team activity.",
+    period: "2025.08 - 2026.05",
+    image: "/portfolio/projects/attendance.png", // Screenshot path
+    skills: ["Flutter", "Bloc", "Firebase","Laravel"], // Tech stack
+    link: "https://apps.apple.com/sa/app/marcom-attend/id6756225584"
+  }, 
+  {
+    id: 2,
+    title: "Esri Mena User Conference 2026",
+    description: "I developed an event management application for Esri Middle East and North Africa that allows users to browse the event, register, and view session schedules and agendas. The app also supports attendee networking and chat messaging",
+    period: "2025.10 - 2026.02",
+    image: "/portfolio/projects/esri.png", // Screenshot path
+    skills: ["Flutter", "Bloc", "Firebase", "Django"], // Tech stack
+    link: "https://apps.apple.com/sa/app/esri-mena-user-conference-2026/id6754825295"
+  },
+  
+  {
+    id: 3,
     title: "SaladBar Meals",
     description: "Built a food subscription app with secure Moyasar payments, QR code scanning for vending machine meal collection, and customizable meal plans. Used Clean Architecture (BLoC, Freezed) with Firebase for notifications and crash reporting.",
     period: "2024.04 - 2025.02",
@@ -42,7 +61,7 @@ const projects: Project[] = [
     link: "https://saladbar.sa"
   },
   {
-    id: 2, 
+    id: 4, 
     title: "Fushati",
     description: "An application that enables parents to monitor and control their children's canteen spending by recharging their wallets/cards, setting daily limits, blocking certain snacks and food items, and also viewing purchase history.",
     period: "2024.6 - 2025.02",
@@ -51,7 +70,7 @@ const projects: Project[] = [
     link: "https://fushati.com/"
   },
    {
-    id: 3, 
+    id:5, 
     title: "Evision",
     description: "Evision is an online platform designed to help students explore opportunities to study abroad by checking their eligibility to apply. As the project manager and part of the design team, I played a key role in creating a user-friendly experience that simplifies the process for students, making their journey toward international education smoother and more accessible.",
     period: "2024.10 - 2025.01",
