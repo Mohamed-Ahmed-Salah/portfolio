@@ -10,7 +10,8 @@ const phases = [
     id: 1,
     title: 'Requirements & Analysis',
     shortTitle: 'REQUIREMENTS',
-    description: 'Deep understanding of feature requirements, business logic, and technical constraints before writing any code.',
+    description: 'Before a single line of code. Understand the feature, the edge cases, and what can go wrong. Find the best way to implement it',
+    
     tags: ['Feature Scoping', 'User Stories', 'API Contracts', 'Risk Assessment', 'Documentation'],
     icon: (
       
@@ -34,7 +35,7 @@ const phases = [
     id: 2,
     title: 'UI/UX Research',
     shortTitle: 'DESIGN RESEARCH',
-    description: 'Find and adapt modern, user-friendly design patterns that elevate visual appeal and usability.',
+    description: 'I don\'t design from scratch. I find what works, understand why it works, then make it mine. Dribbble and Mobbin before Figma.',
     tags: ['Dribbble', 'Mobbin', 'Color Systems', 'Accessibility'],
     icon: (
       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +56,7 @@ const phases = [
     id: 3,
     title: 'Data & Logic Design',
     shortTitle: 'DATA ARCHITECTURE',
-    description: 'Design data models, business logic, and Clean Architecture structure before implementation.',
+    description: 'Most bugs don\'t start in the code. They start in the design. Getting the data flow and architecture right here saves everything downstream.',
     tags: ['Domain Layer', 'Repository Interfaces', 'Use Cases', 'Data Flow'],
     icon: (
       <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +77,7 @@ const phases = [
     id: 4,
     title: 'Development',
     shortTitle: 'IMPLEMENTATION',
-    description: 'Write clean, maintainable code following architectural guidelines and design specifications.',
+    description: 'Write clean code. Predictable structure. BLoC, SOLID, widget organization. Code someone else can read — including future me.',
     tags: ['Clean Code', 'BLoC Pattern', 'SOLID', 'Widget Organization', 'State Management'],
     icon: (
       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +98,7 @@ const phases = [
     id: 5,
     title: 'Code Review',
     shortTitle: 'AI REVIEW',
-    description: 'Ensure code meets quality standards through AI-assisted comprehensive review before merging.',
+    description: 'Code that works isn\'t always code that\'s good, that\'s why I use Claude Code to help review and audit my code before shipping. Architecture check, SOLID violations, performance flags. A second set of eyes that doesn\'t get tired.',
     tags: ['Claude Code', 'SOLID Check', 'Architecture Audit', 'Performance'],
     icon: (
       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +119,7 @@ const phases = [
     id: 6,
     title: 'Refactor & Optimize',
     shortTitle: 'OPTIMIZATION',
-    description: 'Continuously improve code quality, performance, and maintainability based on review findings.',
+    description: 'Every review finds something. The code works. Now we make it last. Cleaner patterns, shared logic, less repetition.',
     tags: ['Performance', 'Code Quality', 'Pattern Application', 'Continuous Improvement'],
     icon: (
       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
