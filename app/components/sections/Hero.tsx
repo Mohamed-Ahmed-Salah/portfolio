@@ -3,10 +3,11 @@
 import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
 import FloatingElements from "../common/FloatingElements"
+import AppShowcase from "../common/AppShowcase"
 
 export default function Hero() {
   return (
-    <section id="home" className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <section id="home" className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-(family-name:--font-geist-sans)">
       <FloatingElements />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <AnimatedText className="flex flex-col items-center sm:items-start gap-4">
@@ -19,8 +20,11 @@ export default function Hero() {
             priority
           />
           <h1 className="text-4xl font-bold">Mohamed Ahmed</h1>
-          <p className="text-lg text-foreground/80 font-[family-name:var(--font-geist-mono)]">
+          <p className="text-lg text-foreground/80 font-(family-name:--font-geist-mono)">
             Flutter Developer
+          </p>
+          <p className="text-lg text-foreground/80 pt-6">
+            <AppShowcase />
           </p>
         </AnimatedText>
 
@@ -39,7 +43,7 @@ export default function Hero() {
             className="
               relative
               z-20
-              rounded-full border border-solid border-black/[.08] dark:border-white/[.145] 
+              rounded-full border border-solid border-black/8 dark:border-white/[.145] 
               transition-colors flex items-center justify-center 
               hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
               h-12                                    // Fixed height
@@ -62,7 +66,7 @@ export default function Hero() {
           </a>
           <a
             className="
-              rounded-full border border-solid border-black/[.08] dark:border-white/[.145] 
+              rounded-full border border-solid border-black/8 dark:border-white/[.145] 
               transition-colors flex items-center justify-center 
               hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
               hover:border-transparent 
