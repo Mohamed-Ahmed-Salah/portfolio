@@ -14,10 +14,9 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// TODO: Please update the title and description with your personal information
 export const metadata: Metadata = {
-  title: "Portfolio Template",
-  description: "A modern portfolio template for developers and designers",
+  title: "Mohamed Ahmed | Mobile Developer",
+  description: "Mohamed Ahmed, mobile developer building iOS apps in SwiftUI and cross-platform apps in Flutter, with 8+ published apps and 80,000+ downloads.",
 };
 
 export default function RootLayout({
