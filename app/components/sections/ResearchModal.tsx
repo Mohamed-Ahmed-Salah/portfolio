@@ -43,7 +43,7 @@ export default function ResearchModal({ paper, onClose }: Props) {
     <div 
       className="
         fixed inset-0 
-        bg-black/20 backdrop-blur-sm 
+        bg-black/20 backdrop-blur-xs 
         z-50 
         flex items-center justify-center 
         p-4
@@ -53,7 +53,7 @@ export default function ResearchModal({ paper, onClose }: Props) {
       <div 
         className="
           relative w-full max-w-[1000px] max-h-[90vh] overflow-auto
-          bg-gradient-to-br from-white/80 to-white/70 
+          bg-linear-to-br from-white/80 to-white/70 
           dark:from-black/80 dark:to-black/70
           backdrop-blur-xl
           rounded-2xl
@@ -82,7 +82,7 @@ export default function ResearchModal({ paper, onClose }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
-                      rounded-full border border-solid border-black/[.08] dark:border-white/[.145] 
+                      rounded-full border border-solid border-black/8 dark:border-white/[.145] 
                       transition-all flex items-center justify-center 
                       hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
                       hover:border-transparent 
@@ -123,7 +123,7 @@ export default function ResearchModal({ paper, onClose }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
-                      rounded-full border border-solid border-black/[.08] dark:border-white/[.145] 
+                      rounded-full border border-solid border-black/8 dark:border-white/[.145] 
                       transition-all flex items-center justify-center 
                       hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
                       hover:border-transparent 
@@ -179,7 +179,7 @@ export default function ResearchModal({ paper, onClose }: Props) {
 
           {/* Chart image - only shown if chartImage provided */}
           {paper.chartImage && (
-            <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+            <div className="relative w-full aspect-video rounded-xl overflow-hidden">
               <Image
                 src={paper.chartImage}
                 alt="Research visualization"

@@ -230,7 +230,7 @@ function Hexagon({
                 pointer-events-auto rounded-lg border px-2 py-1
                 text-[10px] font-semibold transition-colors
                 ${phase.colors.tagText} ${phase.colors.tagBg} ${phase.colors.tagBorder}
-                ${isHovered ? 'shadow-sm' : ''}
+                ${isHovered ? 'shadow-xs' : ''}
               `}
             >
               {tag}
@@ -336,7 +336,7 @@ function CenterHexagon({
                 pointer-events-auto rounded-lg border px-2 py-1
                 text-[10px] font-semibold transition-colors
                 text-green-900 bg-green-100 border-green-500
-                ${isHovered ? 'shadow-sm' : ''}
+                ${isHovered ? 'shadow-xs' : ''}
               `}
             >
               {tag}
@@ -367,7 +367,7 @@ function CenterHexagon({
                 pointer-events-auto rounded-lg border px-2 py-1
                 text-[10px] font-semibold transition-colors
                 text-green-900 bg-green-100 border-green-500
-                ${isHovered ? 'shadow-sm' : ''}
+                ${isHovered ? 'shadow-xs' : ''}
               `}
             >
               {tag}
@@ -520,7 +520,7 @@ export default function DevelopmentMethodology() {
   return (
     <section id="methodology" className="relative py-20 md:py-32 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950" />
+      <div className="absolute inset-0 bg-linear-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950" />
       <IsometricBackground />
 
       <div className="container mx-auto px-4 sm:px-8 relative z-10">
@@ -602,7 +602,7 @@ export default function DevelopmentMethodology() {
                     rounded-2xl
                     border border-gray-200 dark:border-gray-700
                     p-5
-                    shadow-sm
+                    shadow-xs
                     hover:shadow-lg
                     transition-all duration-300
                   "

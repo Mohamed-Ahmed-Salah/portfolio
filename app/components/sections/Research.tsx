@@ -168,7 +168,7 @@ export default function Research() {
                       <button
                         onClick={() => handleOpenModal(paper)}
                         className="
-                          rounded-full border border-solid border-black/[.08] dark:border-white/[.145] 
+                          rounded-full border border-solid border-black/8 dark:border-white/[.145] 
                           transition-all flex items-center justify-center 
                           hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
                           hover:border-transparent 
@@ -180,7 +180,7 @@ export default function Research() {
                           whitespace-nowrap                    
                           min-w-[120px] sm:min-w-[140px]      
                           mt-4 sm:mt-0 sm:ml-6                        
-                          flex-shrink-0
+                          shrink-0
                           group                               
                         "
                       >
