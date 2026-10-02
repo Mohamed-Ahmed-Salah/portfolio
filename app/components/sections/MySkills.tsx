@@ -15,8 +15,8 @@ const technologies = {
   // Development Stack 
   stack: [
     { name: 'Flutter', icon: '/portfolio/skills/flutter.svg' },
+    { name: 'Swift', icon: '/portfolio/skills/swift.svg' },
     { name: 'Java Spring boot', icon: '/portfolio/skills/spring.png' },     
-    { name: 'SQL', icon: '/portfolio/skills/mysql.svg' },
   ],
   
   // state Management skills examples
@@ -30,7 +30,7 @@ const technologies = {
   databasesAndStorage: [
     { name: 'SQLite', icon: '/portfolio/skills/sqlite.svg' },  // Add databases you've used
     { name: 'Hive', icon: '/portfolio/skills/hive.png' },
-    { name: 'Shared Preferences ', icon: '/portfolio/skills/shared_pref.svg' }, // Add deployment tools you're familiar with
+    { name: 'SQL', icon: '/portfolio/skills/mysql.svg' },
   ],
 
   // Development tools examples
