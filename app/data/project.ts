@@ -29,6 +29,126 @@ export type ProjectDetail = {
 
 // Project data mapping object — IDs match the card list in Projects.tsx
 export const PROJECT_DATA: Record<number, ProjectDetail> = {
+  6: {
+    id: 6,
+    title: "Clean Life",
+    company: "Clean Life",
+    overview: "A home services booking platform for Saudi Arabia with 80,000+ downloads. Customers book sofa and deep cleaning, pest control, AC cleaning, home maintenance, furniture moving, car wash and laundry in one app. Built the iOS app natively in SwiftUI and the Android app in Flutter, worked full stack with NestJS and Next.js, and maintained three internal Flutter apps for the operations teams.",
+    mainImage: "/portfolio/projects/cleanlife/cleanlife1.png",
+    link: "https://apps.apple.com/sa/app/id6762178871",
+    features: [
+      {
+        title: "Native iOS (SwiftUI) & Android (Flutter)",
+        description: "Shipped the customer app on both platforms: a native SwiftUI app on iOS and a Flutter app on Android, with a bilingual Arabic/English RTL interface.",
+        image: "/portfolio/projects/cleanlife/placeholder.svg"
+      },
+      {
+        title: "Multi-service Booking",
+        description: "Customers pick a service, add details and quantities, choose a location and appointment slot, and can combine several services in one cart before checking out and tracking the booking.",
+        image: "/portfolio/projects/cleanlife/cleanlife1.png"
+      },
+      {
+        title: "AI Agent & Live Support Chat",
+        description: "An in-app messaging module that handles both a Gemini-powered AI agent and live customer support, with image, video and voice note attachments and location sharing, including upload progress, retry and playback.",
+        image: "/portfolio/projects/cleanlife/chat.png"
+      },
+      {
+        title: "Payments: Tabby, Tamara, Tap & Apple Pay",
+        description: "Added Tabby and Tamara buy-now-pay-later on iOS alongside Tap card payments, Apple Pay and in-app wallet payments.",
+        image: "/portfolio/projects/cleanlife/cleanlife1.png"
+      },
+      {
+        title: "Internal Role-based Apps",
+        description: "Maintained three internal Flutter apps for the pricing team, field team and supervisors. Each role sees only its own appointments, daily agenda and job progress. Released through the Play Store with TinyMDM policies limiting each team to its own apps.",
+        image: "/portfolio/projects/cleanlife/placeholder.svg"
+      }
+    ],
+    techStack: [
+      {
+        category: "Mobile",
+        items: [
+          { label: "SwiftUI", icon: "swift" },
+          { label: "Flutter" },
+          { label: "Dart" },
+        ]
+      },
+      {
+        category: "Full Stack",
+        items: [
+          { label: "NestJS", icon: "nestjs", invert: true },
+          { label: "Next.js", icon: "nextjs", invert: true },
+        ]
+      },
+      {
+        category: "Payments",
+        items: [
+          { label: "Apple Pay", icon: "applepay", invert: true },
+          { label: "Tabby (BNPL)", icon: "tabby" },
+          { label: "Tamara (BNPL)", icon: "tamara" },
+          { label: "Tap Payments", icon: "tap" },
+        ]
+      },
+      {
+        category: "Messaging",
+        items: [
+          { label: "Gemini AI Agent & Live Chat", icon: "gemini" },
+        ]
+      },
+      {
+        category: "Collaboration",
+        items: [
+          { label: "Git (20-person team)", icon: "git" },
+        ]
+      }
+    ],
+    achievements: [
+      {
+        metric: "Downloads",
+        value: "80,000+",
+        change: 100
+      },
+      {
+        metric: "Internal Apps Maintained",
+        value: "3",
+        change: 60
+      },
+      {
+        metric: "Team Size",
+        value: "20 devs",
+        change: 80
+      }
+    ]
+  },
+
+  7: {
+    id: 7,
+    title: "Oriflame SA",
+    company: "Oriflame",
+    overview: "The Oriflame shopping app for Saudi Arabia, letting new and existing Oriflame members browse and order beauty products, with favourites, category search and a new digital eCatalogue.",
+    mainImage: "/portfolio/projects/oriflame/oriflame.png",
+    link: "https://apps.apple.com/sa/app/oriflame-sa/id6800407415",
+    features: [
+      {
+        title: "Product Shopping",
+        description: "Members browse Oriflame's beauty and wellness range and place orders directly from the app.",
+        image: "/portfolio/projects/oriflame/shop.png"
+      },
+      {
+        title: "Digital eCatalogue",
+        description: "A digital eCatalogue that brings Oriflame's printed catalogue into the app, with a page-by-page reader, a grid overview of all pages, and a shade picker that adds products to the bag straight from the page.",
+        image: "/portfolio/projects/oriflame/catalogue.png"
+      },
+      {
+        title: "Favourites & Search",
+        description: "Search suggests matching brands and products with prices as members type, with a shortcut to all results. Members can browse products by category, such as fragrance, and save products to a favourites list to add them to the bag later.",
+        image: "/portfolio/projects/oriflame/favourites_search.png"
+      }
+    ],
+    // TODO: fill in tech stack and results once confirmed (sections stay hidden while empty)
+    techStack: [],
+    achievements: []
+  },
+
   1: {
     id: 1,
     title: "Marcom Attend",

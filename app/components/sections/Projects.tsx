@@ -32,6 +32,24 @@ type Project = {
 // 3. Sort projects in reverse chronological order
 // 4. Project descriptions should highlight core features and technical highlights
 const projects: Project[] = [
+  {
+    id: 6,
+    title: "Clean Life",
+    description: "Home services booking app with 80,000+ downloads, built natively in SwiftUI on iOS and in Flutter on Android. Includes an AI agent and live support chat with media attachments, Tabby/Tamara/Tap/Apple Pay payments, and three internal role-based Flutter apps for the operations teams.",
+    period: "2026.08 - Present",
+    image: "/portfolio/projects/cleanlife/cleanlife1.png", // Screenshot path
+    skills: ["SwiftUI", "Flutter", "NestJS", "Next.js"], // Tech stack
+    link: "https://apps.apple.com/sa/app/id6762178871"
+  },
+  {
+    id: 7,
+    title: "Oriflame SA",
+    description: "Oriflame's shopping app for Saudi Arabia, where members browse and order beauty products, with favourites, category search and a new digital eCatalogue.",
+    period: "2026.09",
+    image: "/portfolio/projects/oriflame/oriflame.png", // Screenshot path
+    skills: [], // TODO: add tech stack
+    link: "https://apps.apple.com/sa/app/oriflame-sa/id6800407415"
+  },
    {
     id: 1,
     title: "Marcom Attend",
@@ -117,10 +135,10 @@ export default function Projects() {
                     setModalOpen(true)
                   }}
                   className="
-                    bg-white/[0.1] dark:bg-black/[0.2]
+                    bg-white/10 dark:bg-black/20
                     backdrop-blur-[20px]
                     rounded-2xl
-                    border border-white/[0.1] dark:border-white/[0.1]
+                    border border-white/10 dark:border-white/10
                     p-6
                     transition-all duration-300
                     hover:-translate-y-1
@@ -157,9 +175,9 @@ export default function Projects() {
                           px-3 py-1
                           text-sm
                           rounded-full
-                          bg-white/[0.05] dark:bg-white/[0.05]
-                          backdrop-blur-[8px]
-                          border border-white/[0.05]
+                          bg-white/5 dark:bg-white/5
+                          backdrop-blur-sm
+                          border border-white/5
                           text-gray-600 dark:text-gray-400
                         "
                       >

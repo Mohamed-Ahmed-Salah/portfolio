@@ -73,7 +73,7 @@ export default function ExperienceModal({
       <div 
         className="
           relative w-full max-w-[1000px] max-h-[90vh] overflow-auto
-          bg-gradient-to-br from-white/80 to-white/70 
+          bg-linear-to-br from-white/80 to-white/70 
           dark:from-black/90 dark:to-black/85
           backdrop-blur-xl
           rounded-2xl
@@ -100,7 +100,7 @@ export default function ExperienceModal({
             transition-all duration-300
             hover:rotate-90
             hover:scale-110
-            focus:outline-none
+            focus:outline-hidden
             focus:ring-2 focus:ring-purple-500/50
           "
         >
@@ -132,7 +132,7 @@ export default function ExperienceModal({
                   font-bold 
                   tracking-tight
                   bg-clip-text text-transparent
-                  bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600
+                  bg-linear-to-r from-purple-600 via-pink-600 to-purple-600
                   dark:from-purple-400 dark:via-pink-400 dark:to-purple-400
                   animate-gradient
                 ">
@@ -197,7 +197,7 @@ export default function ExperienceModal({
           >
             <div className="
               absolute inset-0
-              bg-gradient-to-t from-black/50 to-transparent
+              bg-linear-to-t from-black/50 to-transparent
               opacity-0 group-hover:opacity-100
               transition-opacity duration-300
               z-10
@@ -211,7 +211,7 @@ export default function ExperienceModal({
                 px-4 py-2
                 rounded-full
                 bg-black/30
-                backdrop-blur-sm
+                backdrop-blur-xs
                 border border-white/10
               ">
                 View Project
@@ -325,6 +325,7 @@ export default function ExperienceModal({
             </div>
           </div>
 
+          {experience.techStack.length > 0 && (
           <div className="space-y-8 mb-12">
             <h2 className="
               text-xl sm:text-2xl 
@@ -342,9 +343,9 @@ export default function ExperienceModal({
                     p-6
                     rounded-xl
                     space-y-4
-                    hover:bg-white/[0.02] dark:hover:bg-black/[0.02]
+                    hover:bg-white/2 dark:hover:bg-black/2
                     transition-colors duration-300
-                    border border-white/[0.03] dark:border-white/[0.03]
+                    border border-white/3 dark:border-white/3
                   "
                 >
                   <h3 className="
@@ -406,7 +407,9 @@ export default function ExperienceModal({
               ))}
             </div>
           </div>
+          )}
 
+          {experience.achievements.length > 0 && (
           <div className="space-y-8">
             <h2 className="
               text-xl sm:text-2xl 
@@ -438,6 +441,7 @@ export default function ExperienceModal({
               ))}
             </div>
           </div>
+          )}
         </div>
       </div>
     </div>

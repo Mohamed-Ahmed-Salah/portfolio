@@ -26,13 +26,22 @@ type Experience = {
 // 4. Recommended to sort experience entries in reverse chronological order
 const experiences: Experience[] = [
   {
+    id: 6, // Matches Clean Life in PROJECT_DATA so the card opens its details
+    title: "Mobile Developer",
+    company: "Clean Life",
+    period: "August 2026 - Present",
+    logo: "/portfolio/apps/cleanlife.jpg",
+    skills: ["SwiftUI", "Flutter", "NestJS", "Next.js", "Tabby & Tamara", "Tap Payments", "Apple Pay", "TinyMDM"], // Skills list
+    description: "Shipped Clean Life, a home services booking platform with 80,000+ downloads, building the iOS app natively in SwiftUI and the Android app in Flutter. Built an in-app messaging module for an AI agent and live customer support with image, video and voice note attachments, and added Tabby and Tamara buy-now-pay-later alongside Tap card, Apple Pay and wallet payments. Maintained 3 internal role-based Flutter apps for the pricing, field and supervisor teams, working in a team of 20 with feature branches and code reviews."
+  },
+  {
     id: 1,
     title: "Flutter Developer",
     company: "Marcom Arabia",
-    period: "August 2025 - Present",
+    period: "August 2025 - July 2026",
     logo: "/portfolio/images/marcomArabia.svg", 
-    skills: ["Flutter", "Firebase", "Firebase Crashlytics","Firebase Remote Config","AI Chat Bot", "Google Maps"], // Skills list
-    description: "Built a Flutter attendance tracking CRM with GPS location tracking and Implemented Firebase Remote Config to dynamically customize themes and branding based on the client company. Created an AI-powered chatbot assistant that helps users understand company policies, check attendance records, analyzes attendance history, generates reports, and assists with leave planning."
+    skills: ["Flutter", "iOS Live Activities", "Firebase", "Firebase Remote Config", "Gemini AI", "Google Maps", "Jira"], // Skills list
+    description: "Built iOS Live Activities and Android/iOS home widgets that show attendance status in real time, reducing missed check-outs by 40%, and an AI attendance assistant using Gemini. Released 2 event management apps with 3,000+ combined downloads, refactored 10,000+ lines into clean architecture, cut app size by 10%, and added Google Maps geofencing, Firebase-driven theming, monitoring and in-app review prompts, and full Arabic/English support."
   },
   {
     id: 2,
@@ -106,10 +115,10 @@ export default function Experience() {
                  
                   }}
                   className="
-                    bg-white/[0.1] dark:bg-black/[0.2]
+                    bg-white/10 dark:bg-black/20
                     backdrop-blur-[20px]
                     rounded-2xl
-                    border border-white/[0.1] dark:border-white/[0.1]
+                    border border-white/10 dark:border-white/10
                     p-6
                     transition-all duration-300
                     hover:-translate-y-1
@@ -119,7 +128,7 @@ export default function Experience() {
                   "
                 >
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="relative w-12 h-12 rounded-xl overflow-hidden flex-shrink-0">
+                    <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0">
                       <Image
                         src={experience.logo}
                         alt={experience.company}
@@ -159,9 +168,9 @@ export default function Experience() {
                           px-3 py-1
                           text-sm
                           rounded-full
-                          bg-white/[0.05] dark:bg-white/[0.05]
-                          backdrop-blur-[8px]
-                          border border-white/[0.05]
+                          bg-white/5 dark:bg-white/5
+                          backdrop-blur-sm
+                          border border-white/5
                           text-gray-600 dark:text-gray-400
                         "
                       >
