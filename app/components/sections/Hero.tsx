@@ -1,130 +1,89 @@
 'use client'
 
-import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
-import FloatingElements from "../common/FloatingElements"
 import AppShowcase from "../common/AppShowcase"
 
+// Fine paper-like grain, generated as an SVG noise tile
+const GRAIN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")"
+
+// Simple, friendly hero: greeting with photo, one strong headline, then shipped apps
 export default function Hero() {
   return (
-    <section id="home" className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-(family-name:--font-geist-sans)">
-      <FloatingElements />
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <AnimatedText className="flex flex-col items-center sm:items-start gap-4">
-          <Image
-            className="rounded-full"
-            src="/portfolio/images/me.JPG" 
-            alt="Profile Picture"
-            width={120}
-            height={120}
-            priority
-          />
-          <h1 className="text-4xl font-bold">Mohamed Ahmed</h1>
-          <p className="text-lg text-foreground/80 font-(family-name:--font-geist-mono)">
-            Flutter Developer
-          </p>
-          <p className="text-lg text-foreground/80 pt-6">
-            <AppShowcase />
-          </p>
-        </AnimatedText>
+    <section
+      id="home"
+      className="relative isolate overflow-hidden min-h-screen flex flex-col items-center justify-center gap-10 px-6 py-24 text-center font-(family-name:--font-geist-sans)"
+    >
+      {/* Soft background (dark theme only): one blurred glow behind the text, plus faint grain; fades out at the bottom */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 hidden dark:block"
+        style={{ maskImage: 'linear-gradient(to bottom, black 65%, transparent)' }}
+      >
+        <div className="absolute left-1/2 top-[42%] h-[480px] w-[760px] max-w-[150vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal-400/10 blur-[120px]" />
+        <div
+          className="absolute inset-0 opacity-[0.05] mix-blend-screen"
+          style={{ backgroundImage: GRAIN }}
+        />
+      </div>
 
-        <AnimatedText 
-          className="max-w-2xl text-center sm:text-left"
-        >
-          <p className="text-foreground/80 leading-relaxed">
-           Flutter Developer with 7+ released mobile applications and over 3 years of experience, with cybersecurity and Java Spring boot backend development background, skilled in building scalable, maintainable and testable secure mobile apps using Clean Architecture, state management best practices, and payment integrations.
-          </p>
-        </AnimatedText>
+      <AnimatedText className="flex items-center justify-center gap-2 text-base sm:text-lg font-medium tracking-tight text-zinc-600 dark:text-zinc-300">
+        <span>Hello</span>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/portfolio/images/me-avatar.jpg"
+          alt="Mohamed Ahmed"
+          width={30}
+          height={30}
+          className="size-[30px] shrink-0 max-w-none rounded-full object-cover shadow-sm"
+        />
+        <span>I&apos;m Mohamed</span>
+      </AnimatedText>
 
-        <AnimatedText 
-          className="flex gap-4 items-center flex-row"
-        >
+      <AnimatedText>
+        <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-[1.15] text-zinc-900 dark:text-zinc-50">
+          I build software
+          <br className="hidden sm:block" />
+
+          <em className="font-(family-name:--font-instrument-serif) font-normal italic">engineered</em> to scale{' '}
+          <br className="hidden sm:block" />
+          with simple experiences.
+        </h1>
+        <p className="mt-6 text-base sm:text-lg text-zinc-500 dark:text-zinc-400">
+          Mobile developer in Riyadh · iOS &amp; Android · 8+ apps, 80,000+ downloads
+        </p>
+      </AnimatedText>
+
+      <AnimatedText className="flex flex-col items-center gap-8">
+        <div className="text-zinc-500 dark:text-zinc-400">
+          <AppShowcase label="Apps I've shipped" />
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
           <a
-            className="
-              relative
-              z-20
-              rounded-full border border-solid border-black/8 dark:border-white/[.145] 
-              transition-colors flex items-center justify-center 
-              hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
-              h-12                                    // Fixed height
-              px-5                                   // Fixed padding
-              text-base                              // Fixed font size
-            "
-            href="https://github.com/Mohamed-Ahmed-Salah" 
+            className="rounded-full bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-5 py-2.5 font-medium hover:opacity-85 transition-opacity"
+            href="mailto:&#x6d;&#x6f;&#x68;&#x61;&#x6d;&#x65;&#x64;&#x61;&#x32;&#x34;&#x39;&#x40;&#x68;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
+          >
+            Say hello
+          </a>
+          <a
+            className="rounded-full border border-zinc-200 dark:border-zinc-800 px-5 py-2.5 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
+            href="https://github.com/Mohamed-Ahmed-Salah"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="invert dark:invert-0 mr-2"
-              src="/portfolio/github.svg"
-              alt="GitHub"
-              width={20}
-              height={20}
-              sizes="20px"
-            />
-            <span className="relative z-20">GitHub</span>
+            GitHub
           </a>
           <a
-            className="
-              rounded-full border border-solid border-black/8 dark:border-white/[.145] 
-              transition-colors flex items-center justify-center 
-              hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] 
-              hover:border-transparent 
-              h-12                                   // Fixed height
-              px-5                                   // Fixed padding
-              text-base                              // Fixed font size
-              min-w-44                              // Fixed minimum width
-            "
-            href="/resume.pdf" // Replace with your resume PDF path in public folder
+            className="rounded-full border border-zinc-200 dark:border-zinc-800 px-5 py-2.5 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
+            href="https://www.linkedin.com/in/mohamed-ahmed-972543208/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert mr-2"
-              src="/portfolio/resume.svg"
-              alt="Resume"
-              width={20}
-              height={20}
-              sizes="20px"
-            />
-            View Resume
+            LinkedIn
           </a>
-        </AnimatedText>
-      </main>
-
-      <AnimatedText 
-        className="row-start-3 flex gap-6 flex-wrap items-center justify-center"
-      >
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="mailto:&#x6d;&#x6f;&#x68;&#x61;&#x6d;&#x65;&#x64;&#x61;&#x32;&#x34;&#x39;&#x40;&#x68;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" // Replace with your email address
-        >
-          <Image
-            aria-hidden
-            className="dark:invert"
-            src="/portfolio/mail.svg"
-            alt="Email"
-            width={16}
-            height={16}
-          />
-          Send Email
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.linkedin.com/in/mohamed-ahmed-972543208/" 
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            className="dark:invert"
-            src="/portfolio/linkedin.svg"
-            alt="LinkedIn"
-            width={16}
-            height={16}
-          />
-          LinkedIn
-        </a>
+        </div>
       </AnimatedText>
     </section>
   )
-} 
+}
