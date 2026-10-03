@@ -1,6 +1,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import React from 'react'
+import ThemeToggle from './ThemeToggle'
 
 // Navigation bar configuration
 // To modify navigation bar order and content:
@@ -81,11 +82,13 @@ export default function Navbar() {
         max-w-4xl mx-auto 
         px-3 sm:px-4
         py-4
+        flex items-center gap-2 sm:gap-4
       ">
         <ul ref={navRef} className="
           flex justify-center 
           gap-4 sm:gap-8 /* 移动端间距4, sm(640px)以上为8 */
           relative text-center overflow-x-auto
+          flex-1 min-w-0
         ">
           <div
             ref={underlineRef}
@@ -114,6 +117,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <ThemeToggle />
       </div>
     </nav>
   )
