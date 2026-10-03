@@ -33,3 +33,7 @@ yarn-error.log*
 next-env.d.ts
 /plans/
 .claude
+doc/
+
+# components kept for later, not used by the site
+/unused/
