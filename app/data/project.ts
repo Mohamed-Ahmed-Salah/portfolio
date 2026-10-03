@@ -40,7 +40,7 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
       {
         title: "Native iOS (SwiftUI) & Android (Flutter)",
         description: "Shipped the customer app on both platforms: a native SwiftUI app on iOS and a Flutter app on Android, with a bilingual Arabic/English RTL interface.",
-        image: "/portfolio/projects/cleanlife/placeholder.svg"
+        image: "/portfolio/projects/cleanlife/cleanlife1.png"
       },
       {
         title: "Multi-service Booking",
@@ -60,7 +60,7 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
       {
         title: "Internal Role-based Apps",
         description: "Maintained three internal Flutter apps for the pricing team, field team and supervisors. Each role sees only its own appointments, daily agenda and job progress. Released through the Play Store with TinyMDM policies limiting each team to its own apps.",
-        image: "/portfolio/projects/cleanlife/placeholder.svg"
+        image: "/portfolio/projects/cleanlife/cleanlife1.png"
       }
     ],
     techStack: [
