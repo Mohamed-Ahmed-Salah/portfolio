@@ -42,7 +42,7 @@ export default function Hero() {
 
       <AnimatedText>
         <h1 className="max-w-3xl text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-[1.15] text-zinc-900 dark:text-zinc-50">
-          I build software
+          I build software{' '}
           <br className="hidden sm:block" />
 
           <em className="font-(family-name:--font-instrument-serif) font-normal italic">engineered</em> to scale{' '}
